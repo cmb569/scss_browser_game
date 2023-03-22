@@ -1,0 +1,19 @@
+@import "_config.scss";
+
+%btn {
+  padding-bottom: 1rem;
+  font-size: 150px;
+  color: white;
+  background-color: $primary-button-color;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-top: 30px;
+  
+    &:hover {
+      background-color:$secondary-button-color;
+    }
+  }
+
+  .button{
+    @extend %btn;
+  }

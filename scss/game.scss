@@ -1,3 +1,5 @@
+@import "_config.scss";
+
 body{
 
     font-family: Arial, Helvetica, sans-serif;
@@ -5,7 +7,7 @@ body{
  }
 
  html { 
-     background: url('/images/assets/deck.png') no-repeat center center fixed; 
+     background: $deck; 
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -34,9 +36,11 @@ body{
 
 }
 
-p.choice-prefix{
- color: white;
- margin-left:50px;
+p{
+    choice-prefix{
+        color: white;
+        margin-left:50px;
+       }
 }
 
 .choice-text{
@@ -47,11 +51,11 @@ p.choice-prefix{
 }
 
 .correct{
- background: linear-gradient(32deg, green, 0%, rgb(41, 232, 111) 100%);
+ background: $correct;
 }
 
 .incorrect{
- background: linear-gradient(32deg, red, 0%, rgb(248, 116, 116) 100%);
+ background: $incorrect;
 }
 
 p{

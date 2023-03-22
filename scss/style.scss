@@ -1,31 +1,19 @@
+@import "button_config";
+@import "_config";
+@import "game";
 
 html { 
-    background: url('/images/assets/ship_gif-01.gif'); 
+    background: $island; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family:$font-stack;
   }
 
 
-.button{
-padding-bottom: 1rem;
-font-size: 150px;
-color: white;
-background-color: blue;
-border-radius: 10px;
-margin-left: 0px;
-margin-top: 30px;
-}
-
-
-.button:hover{
-background-color:black;
-}
-
-
 h1{
-font-family: Trade Winds;
+font-family:$display;
 text-align: center;
 font-size: 85px;
 margin-bottom: 100px;
