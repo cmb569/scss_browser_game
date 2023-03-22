@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pirate's Addition Adventure</title>
+<link rel="shortcut icon" type="pirates icon" href="images/favicon/pirates-addition-adventure-icon.png">
+<link rel="stylesheet" href="/css/game.css">
+</head>
+<body>
+  <div class="container" id="wholegame">
+      <div id="game" class="justify-center flex-column">
+          <div id="hud">
+              <div class="hud-item">
+                  <p id="progressText" class="hud-prefix">
+                      Question
+                  </p>
+                  <div id="progressBar">
+                      <div id="progressBarFull"></div>
+                  </div>
+              </div>
+              <!---From plus2net.com: https://www.plus2net.com/html_tutorial/button-linking.php-->
+              <!---Concept of how to link the html.page to the button, so when you click the button it directs you to the next page-->
+              <div class="button">
+                <input type="button" onclick="window.location.href='game.html'" class="restart" value="RESTART"/>
+              </div>
+              <!---From plus2net.com: https://www.plus2net.com/html_tutorial/button-linking.php-->
+              <!---Concept of how to link the html.page to the button, so when you click the button it directs you to the next page-->
+              <div class="button">
+                <input type="button" onclick="window.location.href='index.html'" class="return" value="MAIN MENU"/>
+              </div>
+              <div class="hud-item-2">
+                  <p class="hud-prefix">
+                      SCORE
+                  </p>
+                  <h1 class="hud-main-text" id="score">
+                      0
+                  </h1>
+              </div>
+          </div>
+          <div class="row">
+              <div><h1 id="question" class="question">What does 2+2=?</h1></div>
+            <div class="column">
+                <img src="images/assets/pirate_motion.gif"   alt="Pirate" class="pirate"/>
+                <img src="images/assets/treasure-07.png"  alt="Treasure Chest" class="treasure" />
+            </div>
+            <div class="column"></div>
+            <div class="choice-container">
+                <p class="choice-prefix">A.</p>
+                    <p class="choice-text" data-number="1">4</p>
+            </div>
+            <div class="choice-container">
+              <p class="choice-prefix">B.</p>
+                  <p class="choice-text" data-number="2">7</p>
+          </div>
+          <div class="choice-container">
+              <p class="choice-prefix">C.</p>
+                  <p class="choice-text" data-number="3">3</p>
+          </div>
+          </div>
+
+    
+      </div>
+  </div>
+<!---From stackoverflow.com: https://stackoverflow.com/questions/20179190/autoplay-an-audio-with-html5-embed-tag-while-the-player-is-invisible-->
+<!---Basic concept of how let the sound automatically play by itself without a button.-->
+  <audio autoplay loop src="sound/pirate-adventures-112150.mp3"></audio>
+  <script src="app.js"></script>
+ </body>       
+
+</html>

@@ -1,0 +1,67 @@
+html {
+  background: url("/images/assets/ship_gif-01.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.button {
+  padding-bottom: 1rem;
+  font-size: 150px;
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+h1 {
+  font-family: Trade Winds;
+  text-align: center;
+  font-size: 85px;
+  margin-bottom: 100px;
+  margin-top: 120px;
+  margin-left: 100px;
+}
+
+.center-h {
+  display: flex; /* or display:grid */
+  justify-content: center;
+}
+
+.center-v {
+  display: flex;
+  align-items: center;
+}
+
+.h-500 {
+  height: 700;
+}
+
+img {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    min-width: 10px;
+    font-size: 90px;
+  }
+  .input {
+    min-width: 20rem;
+  }
+  .body {
+    min-width: 20rem;
+  }
+  h1 {
+    font-size: 90px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

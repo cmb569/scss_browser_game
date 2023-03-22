@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pirate's Addition Adventure</title>
+<link rel="shortcut icon" type="pirates icon" href="images/favicon/pirates-addition-adventure-icon.png">
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+    <h1>Pirate's Addition Adventure</h1>
+<!---From plus2net.com: https://www.plus2net.com/html_tutorial/button-linking.php-->
+<!---Concept of how to link the html.page to the button, so when you click the button it directs you to the next page-->
+    <div class="h-500 center-v center-h">  
+        <input type="button" onclick="window.location.href='game.html'" class="button" value="START"/>
+        
+        <div></div>
+    </div>
+   
+<!---From stackoverflow.com: https://stackoverflow.com/questions/20179190/autoplay-an-audio-with-html5-embed-tag-while-the-player-is-invisible-->
+<!---Basic concept of how let the sound automatically play by itself without a button.-->
+    <audio autoplay loop src="sound/aquatic-theme-30134.mp3"></audio>
+    
+    <script src="app.js"></script>
+    </body>
+</html>
+
