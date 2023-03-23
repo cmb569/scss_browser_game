@@ -5,17 +5,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
  
  }
-
+@mixin web-background{
+    background: $deck; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:2000px;
+}
  html { 
-     background: $deck; 
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size:2000px;
+    @include web-background;
    }
 
  
-.choice-container{
+@mixin multiple-q{
  display: flex;
  margin-bottom:20px;
  margin-left:70px;
@@ -28,16 +30,23 @@ body{
  float:initial;
 }
 
-.choice-container:hover{
+@mixin choices{
+@include multiple-q;
+&:hover{
  cursor:pointer;
  box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
  transform: scale(1.02);
  transform: transform 100ms;
 
 }
+}
+
+.choice-container{
+@include choices;
+}
 
 p{
-    choice-prefix{
+    .choice-prefix{
         color: white;
         margin-left:50px;
        }
@@ -49,6 +58,8 @@ p{
  color: white;
 
 }
+
+
 
 .correct{
  background: $correct;
@@ -63,7 +74,8 @@ p{
  color: white;
 }
 
-.question{
+div{
+    .question{
  font-size:50px; 
  background-color:blue;
  color: white; 
@@ -75,6 +87,7 @@ p{
  width: 40%;text-align: 
  center; border-radius: 5px;
 
+}
 }
 
 
@@ -88,27 +101,62 @@ p{
 
 }
 
-.hud-item-2{
+/*.hud-item-2{
  background-color: blue;
  border-radius: 10px;
  margin-right: 20px;
  padding-right:10px;
  padding-left: 10px;
-}
+}*/
 
 
-.hud-prefix{
+/*/////////////////////////////////////*/
+/*incorrect-and-correct-conditions*/
+
+
+
+.hud-item-2{
+    .hud-prefix{
+        text-align:center;
+        font-size: 30px;
+        background-color: blue;
+        border-radius: 10px;
+        margin-right: 20px;
+        padding-right:10px;
+        padding-left: 10px;
+    }
+
+             }
+         
+
+         $score: 3;
+
+         .h1{
+
+            Hud-main-text{
+            @if $score < 5 { 
+                        color: yellow;
+                        @if $score == 3 {
+                           text-color: white;
+                         }
+            }
+            
+            }
+
+
+
+/*.hud-prefix{
  text-align:center;
  font-size: 30px;
  background-color: blue;
-}
+}*/
 
-.hud-main-text{
+/*.hud-main-text{
  text-align: center;
  font-size: 40px;
  color: white;
  background-color: blue;
-}
+}*/
 
 #progressBar{
  width: 20rem;
@@ -120,6 +168,7 @@ p{
  background-color: white;
 
 }
+
 
 #progressBarFull{
  height: 100%;
@@ -162,8 +211,10 @@ p{
  margin-top: 30px;
  }
 
- .restart:hover{
+ .restart{
+    &:hover{
      background-color:black;
+    }
      }
 
  .return{
@@ -176,8 +227,10 @@ p{
      margin-top: 30px;
      }
 
-     .return:hover{
+     .return{
+        &:hover{
          background-color:black;
+        }
          }
 
 h2{
@@ -186,39 +239,4 @@ h2{
  margin-left: 20px;
  background-color: red;
  color: white;
-}
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 782px) {
- .choice-container{
-     width: 500px;
- }
- h1{
-     margin-top: 50px;
-     font-size: 30px;
- }
-}
-
-@media screen and (max-width: 1997px){
-
- img{
-     width: 300px;
- }
- .choice-container{
-     margin-top: 0px;
- }
-
- h1{
-     margin-top: 50px;
-     
- }
-
 }

@@ -1,0 +1,13 @@
+.button {
+  padding-bottom: 1rem;
+  font-size: 150px;
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-top: 30px;
+  font-weight: weight(light);
+}
+.button:hover {
+  background-color: black;
+}/*# sourceMappingURL=button_config.css.map */

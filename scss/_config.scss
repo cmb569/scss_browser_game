@@ -8,3 +8,13 @@ $correct:linear-gradient(32deg, green, 0%, rgb(41, 232, 111) 100%);
 $incorrect:linear-gradient(32deg, red, 0%, rgb(248, 116, 116) 100%);
 $deck: url('/images/assets/deck.png') no-repeat center center fixed; 
 $island: url('/images/assets/ship_gif-01.gif'); 
+$margin-l: 50px;
+$margin-r: 50px;
+$margin-t: 120px;
+$margin-b: 100px;
+$font-weights:(
+ “light”: 300,
+ “regular”: 400,
+ “bold”: 700
+);
+
