@@ -24,6 +24,10 @@ html {
   background-size: 2000px;
 }
 
+h1 .Hud-main-text {
+  font-size: 50px;
+}
+
 .choice-container {
   display: flex;
   margin-bottom: 20px;
@@ -46,6 +50,7 @@ html {
 p .choice-prefix {
   color: white;
   margin-left: 50px;
+  margin-right: 30px;
 }
 
 .choice-text {
@@ -97,7 +102,7 @@ div .question {
 }*/
 /*/////////////////////////////////////*/
 /*incorrect-and-correct-conditions*/
-.hud-item-2 .hud-prefix {
+div .hud-prefix {
   text-align: center;
   font-size: 30px;
   background-color: blue;
@@ -174,14 +179,6 @@ div .question {
   background-color: black;
 }
 
-h2 {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-left: 20px;
-  background-color: red;
-  color: white;
-}
-
 /*SCSS-flow*/
 Hud-main-text {
   color: white;
@@ -203,6 +200,9 @@ html {
   margin-bottom: adjust_width(100);
   margin-top: 120px;
   margin-left: 100px;
+}
+.main-menu:hover {
+  color: green;
 }
 
 .center-h {
