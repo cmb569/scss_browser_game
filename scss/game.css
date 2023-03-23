@@ -1,26 +1,9 @@
-.button {
-  padding-bottom: 1rem;
-  font-size: 150px;
-  color: white;
-  background-color: blue;
-  border-radius: 10px;
-  margin-left: 0px;
-  margin-top: 30px;
-  font-weight: weight(light);
-}
-.button:hover {
-  background-color: black;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
   background: url("/images/assets/deck.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: 2000px;
 }
 
@@ -184,59 +167,4 @@ h2 {
 
 Hud-main-text {
   color: white;
-}
-
-html {
-  background: url("/images/assets/ship_gif-01.gif");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: Trebuchet MS, Arial, sans-serif;
-}
-
-.main-menu h1 {
-  font-family: Trade Winds;
-  text-align: center;
-  font-size: 85px;
-  margin-bottom: adjust_width(100);
-  margin-top: 120px;
-  margin-left: 100px;
-}
-
-.center-h {
-  display: flex; /* or display:grid */
-  justify-content: center;
-}
-
-.center-v {
-  display: flex;
-  align-items: center;
-}
-
-.h-500 {
-  height: 700;
-}
-
-img {
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  .button {
-    min-width: 10px;
-    font-size: 90px;
-  }
-  .input {
-    min-width: 20rem;
-  }
-  .body {
-    min-width: 20rem;
-  }
-  h1 {
-    font-size: 90px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=game.css.map */

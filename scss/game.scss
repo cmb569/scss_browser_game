@@ -29,214 +29,192 @@ body{
  padding: 1px;
  float:initial;
 }
-
 @mixin choices{
-@include multiple-q;
-&:hover{
- cursor:pointer;
- box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
- transform: scale(1.02);
- transform: transform 100ms;
-
-}
-}
-
-.choice-container{
-@include choices;
-}
-
-p{
-    .choice-prefix{
-        color: white;
-        margin-left:50px;
-       }
-}
-
-.choice-text{
- padding: 1rem;
- width: 100%;
- color: white;
-
-}
-
-
-
-.correct{
- background: $correct;
-}
-
-.incorrect{
- background: $incorrect;
-}
-
-p{
- text-align: center;
- color: white;
-}
-
-div{
-    .question{
- font-size:50px; 
- background-color:blue;
- color: white; 
- display: block; 
- margin-left:10px;
- margin-right: 10px; 
- margin-top: 10px; 
- padding-top: 2px;
- width: 40%;text-align: 
- center; border-radius: 5px;
-
-}
-}
-
-
-
-
-/* Heads up Display */
-#hud{
- display:flex;
- justify-content: space-between;
- margin: 20px;
-
-}
-
-/*.hud-item-2{
- background-color: blue;
- border-radius: 10px;
- margin-right: 20px;
- padding-right:10px;
- padding-left: 10px;
-}*/
-
-
-/*/////////////////////////////////////*/
-/*incorrect-and-correct-conditions*/
-
-
-
-.hud-item-2{
-    .hud-prefix{
-        text-align:center;
-        font-size: 30px;
-        background-color: blue;
-        border-radius: 10px;
-        margin-right: 20px;
-        padding-right:10px;
-        padding-left: 10px;
-    }
-
-             }
-         
-
-         $score: 3;
-
-         .h1{
-
-            Hud-main-text{
-            @if $score < 5 { 
-                        color: yellow;
-                        @if $score == 3 {
-                           text-color: white;
-                         }
-            }
-            
-            }
-
-
-
-/*.hud-prefix{
- text-align:center;
- font-size: 30px;
- background-color: blue;
-}*/
-
-/*.hud-main-text{
- text-align: center;
- font-size: 40px;
- color: white;
- background-color: blue;
-}*/
-
-#progressBar{
- width: 20rem;
- height: 3rem;
- border: 0.2rem solid green;
- margin-top: 2rem;
- border-radius: 50px;
- overflow: hidden;
- background-color: white;
-
-}
-
-
-#progressBarFull{
- height: 100%;
- background: green;
- width:0%
-}
-
-.column {
- float: left;
- width: 50%;
-}
-
-.row:after {
- content: "";
- display: table;
- clear: both;
-}
-
-.pirate{
- margin-left: 50px;
- margin-top: 20px;
- margin-bottom: 20px;
- width: 400px;
-
-}
-
-.treasure{
- margin-left: 20px;
- margin-top: 40px;
-
-}
-
-.restart{
- padding-bottom: 1rem;
- font-size: 50px;
- color: white;
- background-color: purple;
- border-radius: 10px;
- margin-left: 500px;
- margin-top: 30px;
- }
-
- .restart{
+    @include multiple-q;
     &:hover{
-     background-color:black;
+     cursor:pointer;
+     box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+     transform: scale(1.02);
+     transform: transform 100ms;
+    
     }
-     }
-
- .return{
-     padding-bottom: 1rem;
-     font-size: 50px;
+    }
+    
+    .choice-container{
+    @include choices;
+    }
+    
+    p{
+        .choice-prefix{
+            color: white;
+            margin-left:50px;
+           }
+    }
+    
+    .choice-text{
+     padding: 1rem;
+     width: 100%;
      color: white;
-     background-color: green;
+    
+    }
+    
+    
+    
+    .correct{
+     background: $correct;
+    }
+    
+    .incorrect{
+     background: $incorrect;
+    }
+    
+    p{
+     text-align: center;
+     color: white;
+    }
+    
+    div{
+        .question{
+     font-size:50px; 
+     background-color:blue;
+     color: white; 
+     display: block; 
+     margin-left:10px;
+     margin-right: 10px; 
+     margin-top: 10px; 
+     padding-top: 2px;
+     width: 40%;text-align: 
+     center; border-radius: 5px;
+    
+    }
+    }
+    
+    
+    
+    
+    /* Heads up Display */
+    #hud{
+     display:flex;
+     justify-content: space-between;
+     margin: 20px;
+    
+    }
+    
+    /*.hud-item-2{
+     background-color: blue;
      border-radius: 10px;
-     margin-left: 0px;
-     margin-top: 30px;
-     }
-
-     .return{
-        &:hover{
-         background-color:black;
+     margin-right: 20px;
+     padding-right:10px;
+     padding-left: 10px;
+    }*/
+    
+    
+    /*/////////////////////////////////////*/
+    /*incorrect-and-correct-conditions*/
+    
+    
+    
+    .hud-item-2{
+        .hud-prefix{
+            text-align:center;
+            font-size: 30px;
+            background-color: blue;
+            border-radius: 10px;
+            margin-right: 20px;
+            padding-right:10px;
+            padding-left: 10px;
         }
-         }
+    
+                 }
+                 #progressBar{
+                    width: 20rem;
+                    height: 3rem;
+                    border: 0.2rem solid green;
+                    margin-top: 2rem;
+                    border-radius: 50px;
+                    overflow: hidden;
+                    background-color: white;
+                   
+                   }
+                   
+                   
+                   #progressBarFull{
+                    height: 100%;
+                    background: green;
+                    width:0%
+                   }
+                   
+                   .column {
+                    float: left;
+                    width: 50%;
+                   }
+                   
+                   .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                   }
+                   
+                   .pirate{
+                    margin-left: 50px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 400px;
+                   
+                   }
+                   
+                   .treasure{
+                    margin-left: 20px;
+                    margin-top: 40px;
+                   
+                   }
+                   
+                   .restart{
+                    padding-bottom: 1rem;
+                    font-size: 50px;
+                    color: white;
+                    background-color: purple;
+                    border-radius: 10px;
+                    margin-left: 500px;
+                    margin-top: 30px;
+                    }
+                   
+                    .restart{
+                       &:hover{
+                        background-color:black;
+                       }
+                        }
+                   
+                    .return{
+                        padding-bottom: 1rem;
+                        font-size: 50px;
+                        color: white;
+                        background-color: green;
+                        border-radius: 10px;
+                        margin-left: 0px;
+                        margin-top: 30px;
+                        }
+                   
+                        .return{
+                           &:hover{
+                            background-color:black;
+                           }
+                            }
+                   
+                   h2{
+                    font-size: 30px;
+                    margin-top: 30px;
+                    margin-left: 20px;
+                    background-color: red;
+                    color: white;
+                   }
+                   
+                   
+                   
+$score:3;
 
-h2{
- font-size: 30px;
- margin-top: 30px;
- margin-left: 20px;
- background-color: red;
- color: white;
+Hud-main-text{
+@if $score < 5 { 
+            color: white;
+             }
 }
