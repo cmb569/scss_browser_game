@@ -16,16 +16,20 @@ body{
 }
  
 
-html { 
-    @include web-background;
-   }
 
+$score:3;
 
    h1{
     .Hud-main-text{
         font-size: 50px;
-    }
+
+@if $score < 5 { 
+            color: white;
+             }
 }
+
+    }
+
 @mixin multiple-q{
  display: flex;
  margin-bottom:20px;
@@ -217,13 +221,6 @@ html {
                    
 /*SCSS-flow*/                  
                    
-$score:3;
-
-Hud-main-text{
-@if $score < 5 { 
-            color: white;
-             }
-}
 
 
 $text:6;

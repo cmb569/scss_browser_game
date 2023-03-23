@@ -16,16 +16,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
-  background: url("/images/assets/deck.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 2000px;
-}
-
 h1 .Hud-main-text {
   font-size: 50px;
+  color: white;
 }
 
 .choice-container {
@@ -180,10 +173,14 @@ div .hud-prefix {
 }
 
 /*SCSS-flow*/
-Hud-main-text {
-  color: white;
-}
+/*@function adjust_margin($n) {
+    @return $n * $margin-l + ($n - 1) * $margin-r;
+    @warn "Please remember to use px values in the `adjust_margin()` function.";
+ }
 
+ @function weight($weight-name){
+    @return map-get($font-weights , $weight-name)
+  }*/
 html {
   background: url("/images/assets/ship_gif-01.gif");
   -webkit-background-size: cover;
