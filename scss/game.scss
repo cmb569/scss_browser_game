@@ -209,12 +209,21 @@ body{
                     color: white;
                    }
                    
-                   
+/*SCSS-flow*/                  
                    
 $score:3;
 
 Hud-main-text{
 @if $score < 5 { 
+            color: white;
+             }
+}
+
+
+$text:6;
+
+body{
+@if$text< 5 { 
             color: white;
              }
 }
