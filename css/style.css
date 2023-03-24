@@ -173,13 +173,6 @@ div .hud-prefix {
 }
 
 /*SCSS-flow*/
-/*$text:6;
-
-body{
-@if$text< 5 { 
-            color: white;
-             }
-}*/
 html {
   background: url("/images/assets/ship_gif-01.gif");
   -webkit-background-size: cover;
