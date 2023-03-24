@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 .Hud-main-text {
+  font-size: 50px;
+  color: white;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  width: 700px;
+  scrollbar-width: 280px;
+  border-radius: 40px;
+  background: blue;
+  font-size: 30px;
+  padding: 1px;
+  float: initial;
+}
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+  transform: scale(1.02);
+  transform: transform 100ms;
+}
+
+p .choice-prefix {
+  color: white;
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+.choice-text {
+  padding: 1rem;
+  width: 100%;
+  color: white;
+}
+
+.correct {
+  background: linear-gradient(32deg, green, 0%, rgb(41, 232, 111) 100%);
+}
+
+.incorrect {
+  background: linear-gradient(32deg, red, 0%, rgb(248, 116, 116) 100%);
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+div .question {
+  font-size: 50px;
+  background-color: blue;
+  color: white;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-top: 2px;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Heads up Display */
+#hud {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/*.hud-item-2{
+ background-color: blue;
+ border-radius: 10px;
+ margin-right: 20px;
+ padding-right:10px;
+ padding-left: 10px;
+}*/
+/*/////////////////////////////////////*/
+/*incorrect-and-correct-conditions*/
+div .hud-prefix {
+  text-align: center;
+  font-size: 30px;
+  background-color: blue;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid green;
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: white;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: green;
+  width: 0%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pirate {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.treasure {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.restart {
+  padding-bottom: 1rem;
+  font-size: 50px;
+  color: white;
+  background-color: purple;
+  border-radius: 10px;
+  margin-left: 500px;
+  margin-top: 30px;
+}
+
+.restart:hover {
+  background-color: black;
+}
+
+.return {
+  padding-bottom: 1rem;
+  font-size: 50px;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+
+.return:hover {
+  background-color: black;
+}
+
+/*SCSS-flow*//*# sourceMappingURL=game.css.map */
